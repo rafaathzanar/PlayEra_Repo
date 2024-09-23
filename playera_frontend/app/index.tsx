@@ -18,9 +18,6 @@ const WelcomeScreen = () => {
             entering={FadeInDown.duration(200).springify()}
             className="flex-row justify-center items-center pb-24"
           >
-            <MaterialCommunityIcons name="cricket" size={35} color="#1283A8" />
-            <MaterialCommunityIcons name="soccer" size={35} color="#1283A8" />
-            <MaterialCommunityIcons name="pool" size={35} color="#1283A8" />
             <Text className="text-white font-mono text-4xl leading-[60px] pl-1">
               Play
             </Text>
@@ -33,7 +30,7 @@ const WelcomeScreen = () => {
             entering={FadeInDown.duration(200).delay(200).springify()}
           >
             <Text className="text-white text-[52px] font-medium leading-[60px]">
-              Find and book your sport venues easily.
+              Find and book sport venues easily.
             </Text>
           </Animated.View>
 
@@ -42,7 +39,7 @@ const WelcomeScreen = () => {
             entering={FadeInDown.duration(200).delay(400).springify()}
           >
             <Text className="text-neutral-300 text-lg font-medium leading-[38px] text-center">
-              Find an easy way to book sports venues with just a few clicks.
+              Your friend in finding sports venues near you.
             </Text>
           </Animated.View>
 
