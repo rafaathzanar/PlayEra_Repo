@@ -2,6 +2,7 @@ import { Pressable, SafeAreaView, Text, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 import Animated, { FadeInDown } from "react-native-reanimated";
+import { router } from "expo-router";
 
 const WelcomeScreen = () => {
   return (
@@ -49,7 +50,7 @@ const WelcomeScreen = () => {
           >
             <Pressable
               className="bg-[#1283A8] h-20 rounded-xl justify-center items-center"
-              onPress={() => alert("Discover pressed!")}
+              onPress={() => router.push("/(tabs)")}
             >
               <Text className="text-white font-bold text-2xl">Discover</Text>
             </Pressable>
