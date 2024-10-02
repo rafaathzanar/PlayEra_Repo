@@ -17,10 +17,10 @@ public class User {
 
 
     private String email;
-    private String role; // e.g., "owner", "customer"
+    private String role;
     private String password; // Password should be securely hashed in a real system.
     private int bookingsCount;
-    private String level; // e.g., Bronze, Silver, Gold (based on bookings)
+    private String level;
 
 }
 
