@@ -22,7 +22,7 @@ public class PaymentController {
             int amount = paymentRequest.getAmount() * 100;
 
             // Create a PaymentIntent using StripeService
-            PaymentIntent paymentIntent = stripeService.createPaymentIntent(amount, "usd", paymentRequest.getDescription());
+            PaymentIntent paymentIntent = stripeService.createPaymentIntent(amount, "lkr", paymentRequest.getDescription());
 
             // Return the client secret of the payment intent (needed for frontend)
             return ResponseEntity.ok(paymentIntent.getClientSecret());
